@@ -135,3 +135,4 @@ print(rectangle.height)
 ```
 
 2. 따라서 값을 24로 선언한다 해도 최대값을 12로 property wrapper 를 사용하여 지정했기 때문에 12가 출력되는 것을 알 수 있다.
+[swift 공석문서, 프로퍼티](https://docs.swift.org/swift-book/LanguageGuide/Properties.html)
