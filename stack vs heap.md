@@ -17,6 +17,34 @@
 - 변수가 많아진다
 - 재귀함수와 달리 함수를 호출하는 것이 아니기 때문에 스택 메모리 공간을 많이 차지하지 않는다
 
+#### 실행속도 비교해보기
+
+```swift
+func 재귀함수() {
+    print("안녕하세요")
+}
+
+func 반복문() {
+    for _ in 1...10 {
+        print("안녕하세요")
+    }
+}
+func checkTime() {
+    let startTime = CFAbsoluteTimeGetCurrent()
+    //실행할 함수 ex)재귀함수()
+    let durationTime = CFAbsoluteTimeGetCurrent() - startTime
+    print("경과 시간: \(durationTime)")
+}
+```
+간단하게 print("안녕하세요") 출력하는 함수를 재귀함수와 반복문으로 만들어서 각 함수를 같은 횟수로 실행했을 때 시간을 확인했다.
+시간을 확인하는 함수는 ```checkTime()```으로 구현했다.
+
+|재귀함수 |반복문  |
+| -------- | -------- | 
+|<img width="265" alt="스크린샷 2022-12-30 오후 10 32 55" src="https://user-images.githubusercontent.com/114971172/210075917-fdfca6e7-f409-4d42-98f3-15586b2d2e0a.png"> |<img width="260" alt="스크린샷 2022-12-30 오후 10 33 22" src="https://user-images.githubusercontent.com/114971172/210075991-fc38ea7e-62b9-4d24-9947-6bbcc4567a37.png">|
+
+실제로 실행속도를 비교해보니 반복문이 재귀함수보다 빠른것을 확인할 수 있었다!
+
 ![](https://i.imgur.com/jaa9Nrb.png)
 
 
