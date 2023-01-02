@@ -36,7 +36,7 @@ rijiEnglishAge.age // 20
 rijiKoreanAge.age // 21
 
 ```
-- age 라는 프로퍼티를 이용하여 enlishAge, koreanAge 값을 customizing 하여 나타낼 수 있다.
+- age 라는 프로퍼티를 이용하여 englishAge, koreanAge 값을 customizing 하여 나타낼 수 있다.
 
 #### Parameter Names and Argument Labels
 > 이니셜라이저 안에 매개변수로 지정할 수 있다.
@@ -173,7 +173,7 @@ class PersonA {
     }
 
     convenience init() {
-        self.init(name: "아무개") // 안전확인 3. 편리한 초기화를 할때는, 무조건 지정 이니셜라이저를 호출해야한다. 만약 이 줄이 없이 self.age = 100 을 바로 입력할 수 없다.
+        self.init(name: "아무개") // 안전확인 3. 편리한 초기화를 할때는, 무조건 다른 이니셜라이저를 호출해야한다. 만약 이 줄이 없이 self.age = 100 을 바로 입력할 수 없다.
         self.age = 100
     }
 
