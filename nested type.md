@@ -49,3 +49,10 @@ print("theAceOfSpades: \(theAceOfSpades.description)")
 let heartSymbol = BlackjackCard.Suit.hearts.rawValue
 // heartsSymbol is "♡"
 ```
+- 정의된 문맥 밖에서 중첩타입의 값에 접근하려면 rawValue를 이용할 수 있다.
+- struct 에서는 memberwise initializer 기능이 구현되어 따로 initializer를 생성해 주지 않아도 자동으로 생성한다. 
+- class 에서는 이니셜라이저를 정의해주어야 한다.
+
+## 📚 참고
+
+[중첩타입 공식문서](https://docs.swift.org/swift-book/LanguageGuide/NestedTypes.html)
