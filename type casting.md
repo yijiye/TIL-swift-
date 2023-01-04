@@ -36,6 +36,7 @@ class Song: MediaItem {
     }
 }
 
+// Movie, Song 인스턴스를 가지는 library, array 배열로 추론
 let library = [
     Movie(name: "Casablanca", director: "Michael Curtiz"),
     Song(name: "Blue Suede Shoes", artist: "Elvis Presley"),
@@ -44,7 +45,7 @@ let library = [
     Song(name: "Never Gonna Give You Up", artist: "Rick Astley")
 ]
 ```
-- library 는 Movie와 Song의 인스턴스를 가지고 있지만 타입은 한가지의 값으로 확인할 수 있기 때문에 Movie와 Song의 공통이 되는 부모클래스인 MediaItem을 추론하고 있다.
+- library 는 Movie와 Song의 인스턴스를 가지고 있지만 부모클래스인 MediaItem을 추론하고 있다. (일종의 업캐스팅으로 볼 수 있음)
 - native type에 접근하고 싶으면 다운캐스팅으로 확인이 필요함!
 
 ### is (타입이 맞는지 확인하는 방법)
@@ -87,6 +88,44 @@ for item in library {
 ### as
 - 캐스팅하려는 타입이 같은 타입이거나 부모클래스 타입이라는 것을 아는 경우는 항상 성공하는 다운캐스팅으로 사용할 수 있다.
 
+### 업캐스팅, 다운캐스팅 비교
+```swift
+class Person {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+}
+
+class Student: Person {
+    var age: Int
+    init(name: String, age: Int) {
+        self.age = age
+        super.init(name: name)
+    }
+}
+
+class UniversityStudent: Student {
+    var major: String
+    init(name: String, age: Int, major: String) {
+        self.major = major
+        super.init(name: name, age: age)
+    }
+}
+
+let riji = Student(name: "리지", age: 25) as Person // Person 으로 업캐스팅
+print(type(of: riji)) // 타입을 출력해보면 Student로 출력됨
+//riji.age // Person으로 업캐스팅하여 Student에 접근할 수 없음!!
+
+let joy = UniversityStudent(name: "조이", age: 20, major: "immunology") as Student
+//joy.major // 마찬가지로 Student로 업캐스팅 했기 때문에 major에 접근할 수 없다.
+
+let universityStudentJoy = joy as! UniversityStudent
+print(universityStudentJoy.major) // 다시 다운캐스팅해서 접근할 수 있음
+```
+- 업캐스팅을 했을 때 값에 접근할 수 없지만 데이터가 사라지는 것은 아니다.
+- 다시 다운캐스팅 했을 때 값이 접근되는 것으로 확인할 수 있다.
+- 
 ### Type Casting for Any and AnyObject
 
 - Any : 함수 타입을 포함한 모든 타입 가능
@@ -95,7 +134,7 @@ for item in library {
 **그러나 늘 구체적으로 타입을 명시해주는 것이 좋다**
 
 - things 라는 Any 타입의 빈 배열은 어떤 타입이든 넣어줄 수 있다.
-```swift
+```swift=
 var things: [Any] = []
 
 things.append(0)
@@ -136,5 +175,6 @@ for thing in things {
     }
 }
 ```
+
 ## 📚 참고
 [타입캐스팅 공식문서](https://docs.swift.org/swift-book/LanguageGuide/TypeCasting.html)
