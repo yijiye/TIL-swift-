@@ -136,3 +136,5 @@ for thing in things {
     }
 }
 ```
+## 📚 참고
+[타입캐스팅 공식문서](https://docs.swift.org/swift-book/LanguageGuide/TypeCasting.html)
