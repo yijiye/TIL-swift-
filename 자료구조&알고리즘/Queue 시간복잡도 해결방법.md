@@ -57,6 +57,28 @@ struct DoubleStackQueue<T> {
 ```
 - 두개의 빈 배열을 만들어 주고 enqueue로 값을 넣어주고 그 값을 ```reversed```해주어 값을 반대로 뒤집은 다음 마지막 값을 제거하여 반환하여 시간복잡도가 그대로 O(1)로 해결해 줄 수 있는 방법이 있다.
 
+- ```input.removeAll()```확인하는 코드
+```swift
+var someQueue = DoubleStackQueue<String>()
+someQueue.enqueue("10")
+someQueue.enqueue("11")
+someQueue.enqueue("12")
+print(someQueue.input) // 10, 11, 12
+someQueue.dequeue()
+print(someQueue.output) // 12, 11
+print(someQueue.input) // 10, 11, 12
+someQueue.enqueue("13")
+print(someQueue.input) // 13
+print(someQueue.output) // 12, 11
+someQueue.dequeue() // 11
+someQueue.dequeue() // 12
+someQueue.dequeue() // 비어있으니까 input을 reversed() 하고 removeLast() 해서 13 반환
+print(someQueue.output) // 빈 배열
+```
+
+- 값을 넣어주고 빼주고 반복하면 왜 저 구문이 필요한지 확인할 수 있다.
+- 만약 input을 제거해주는 구문이 없다면 계속해서 쌓이고 중복되는 경우가 발생한다.
+
 ## 참고
 [개발자아라찌](https://apple-apeach.tistory.com/8)
 [개발자소들이](https://babbab2.tistory.com/84)
