@@ -37,6 +37,7 @@
 - 만약 테이블의 컨텐츠가 절대 바뀌지 않는다면 대신 스토리보드 파일에서 컨텐츠를 구성할 수 있다.
 
 #### <details><summary>[UITableViewCell](https://developer.apple.com/documentation/uikit/uitableviewcell)</summary>
+    
 > 테이블 뷰에서 단일 행의 시각적 표현
 
 <img src="https://i.imgur.com/oFNZHSG.png" width="500">
@@ -77,6 +78,7 @@
 - 만약 테이블의 데이터 소스 객체가 UIDataSourceModelAssociation 프로토콜을 채택한다면, 테이블은 그것들의 인덱스 경로 대신에 아이템에 제공하는 특정 ID를 저장한다.
 
 #### <details><summary>[RestorationIdentifier](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621499-restorationidentifier)</summary>
+    
 >뷰 컨트롤러가 상태 복원을 지원하는지 여부를 결정하는 식별자
 
 <img src="https://i.imgur.com/J1V41rG.png" width="500">
