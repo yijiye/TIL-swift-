@@ -36,7 +36,26 @@
 - 데이터 소스 객체는 앱의 데이터를 관리하고 테이블의 셀을 만들고 구성하는데 책임이 있다.
 - 만약 테이블의 컨텐츠가 절대 바뀌지 않는다면 대신 스토리보드 파일에서 컨텐츠를 구성할 수 있다.
 
-#### <details><summary>[UITableViewCell](https://developer.apple.com/documentation/uikit/uitableviewcell)</summary>
+
+
+### Save and restore the table's current state
+- 테이블 뷰는 UIKit app 복원를 지원한다.
+- 테이블의 데이터를 복원하고 저장하기 위해 테이블 뷰의 `restoration Identifier` 프로퍼티에 비어있지 않은 값을 할당한다.
+- 부모 view controller를 저장할 때, 테이블 뷰는 자동적으로 현재 선택되고 보이는 행의 인덱스 경로를 자동으로 저장한다.
+- 만약 테이블의 데이터 소스 객체가 UIDataSourceModelAssociation 프로토콜을 채택한다면, 테이블은 그것들의 인덱스 경로 대신에 아이템에 제공하는 특정 ID를 저장한다.
+
+#### [RestorationIdentifier](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621499-restorationidentifier)
+    
+>뷰 컨트롤러가 상태 복원을 지원하는지 여부를 결정하는 식별자
+
+<img src="https://i.imgur.com/J1V41rG.png" width="500">
+
+- 이 프로퍼티는 뷰 컨트롤러와 그 내용을 보존해야 하는지 여부를 나타내며 복원 과정에서 뷰 컨트롤러를 식별하는 데 사용된다.
+- 디폴트 값은 `nil`이며 뷰 컨트롤러가 저장할것이 없다는 것을 의미한다.
+- 프로퍼티에 문자열 객체를 할당하면 뷰 컨트롤러가 저장할 것이 있다는 것을 시스템에게 알려주고 문자열 컨텐츠는 뷰 컨트롤러의 목적을 식별하는 방법이될 수 있다.
+- **간단히 프로퍼티 값을 세팅하는 것은 뷰컨트롤러가 저장하고 복원해야하는 것을 보증하기 충분하지 않다. 모든 부모 뷰 컨틀롤러가 restoration identifier를 가져야만 한다.**
+
+## [UITableViewCell](https://developer.apple.com/documentation/uikit/uitableviewcell)
     
 > 테이블 뷰에서 단일 행의 시각적 표현
 
@@ -58,7 +77,7 @@
 - 모든 테이블 뷰는 적어도 한개 이상의 표시하는 컨텐츠 셀을 가져야하고 테이블은 다른 타입의 컨텐츠를 표시하기 위해 여러 셀 타입을 가진다.
 - 테이블 데이터 소스 객체는 온스크린 하기 전 셀의 구성과 생성을 핸들링한다.
 
-#### 셀 컨텐츠 구성
+### 셀 컨텐츠 구성
 - 스토리보드 파일에서 셀의 레이아웃과 컨텐츠를 구성한다.
 - 테이블은 디폴트로 하나의 셀 타입을 가지고 있지만 테이블의 Prototype Cells attribute에서 값을 변경하여 더 추가할 수도 있다.
 - 셀 컨텐츠를 구성하는 것 외에 아래와 같은 속성을 구성해야한다.
@@ -69,26 +88,6 @@
 - 테이블 뷰 만들기
   - [init(style:reuseIdentifier)](https://developer.apple.com/documentation/uikit/uitableviewcell/1623276-init)
     
-</details>
-
-### Save and restore the table's current state
-- 테이블 뷰는 UIKit app 복원를 지원한다.
-- 테이블의 데이터를 복원하고 저장하기 위해 테이블 뷰의 `restoration Identifier` 프로퍼티에 비어있지 않은 값을 할당한다.
-- 부모 view controller를 저장할 때, 테이블 뷰는 자동적으로 현재 선택되고 보이는 행의 인덱스 경로를 자동으로 저장한다.
-- 만약 테이블의 데이터 소스 객체가 UIDataSourceModelAssociation 프로토콜을 채택한다면, 테이블은 그것들의 인덱스 경로 대신에 아이템에 제공하는 특정 ID를 저장한다.
-
-#### <details><summary>[RestorationIdentifier](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621499-restorationidentifier)</summary>
-    
->뷰 컨트롤러가 상태 복원을 지원하는지 여부를 결정하는 식별자
-
-<img src="https://i.imgur.com/J1V41rG.png" width="500">
-
-- 이 프로퍼티는 뷰 컨트롤러와 그 내용을 보존해야 하는지 여부를 나타내며 복원 과정에서 뷰 컨트롤러를 식별하는 데 사용된다.
-- 디폴트 값은 `nil`이며 뷰 컨트롤러가 저장할것이 없다는 것을 의미한다.
-- 프로퍼티에 문자열 객체를 할당하면 뷰 컨트롤러가 저장할 것이 있다는 것을 시스템에게 알려주고 문자열 컨텐츠는 뷰 컨트롤러의 목적을 식별하는 방법이될 수 있다.
-- **간단히 프로퍼티 값을 세팅하는 것은 뷰컨트롤러가 저장하고 복원해야하는 것을 보증하기 충분하지 않다. 모든 부모 뷰 컨틀롤러가 restoration identifier를 가져야만 한다.**
-</details>
-
 ## UITableViewController
 > 테이블 뷰를 관리하는 view controller
 
