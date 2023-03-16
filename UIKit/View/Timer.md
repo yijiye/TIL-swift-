@@ -65,6 +65,7 @@ private func setUpTimer() {
 
 - 메서드를 추가하여 viewDidLoad()에 띄워주면 화면에서 실시간으로 측정할 수 있다.
 
+- [fmod를 활용하여 timer 포맷 적용하기](https://github.com/yijiye/TIL-swift-/blob/main/Swift/fmod메서드.md)
 ## 참고
 [공식문서](https://developer.apple.com/documentation/foundation/timer) </br>
 [unclean.tistory](https://unclean.tistory.com/27)
