@@ -7,8 +7,7 @@
      - **이벤트 처리(...Delegate)**
 
 
-<img src="https://i.imgur.com/iGcSetU.png
-" width="500">
+<img src="https://i.imgur.com/iGcSetU.png" width="500">
 
 
 - TableView는 TableViewDataSource와 TableViewDelegate protocol을 채택할 수 있고 준수한다.
