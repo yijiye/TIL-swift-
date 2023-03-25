@@ -114,7 +114,7 @@ final class NetworkManagerTest: XCTestCase {
         sut = nil
     }
 ```
-
+- URLSession에 `URLSession.shared.dataTask(with: urlRequest)` 가 전달되면 실제 서버와 통신을 하게 되지만, `setUpWithError()` 안에서 `urlSession`에 의존성을 주입하면 데이터 통신이 되지 않고 가로채어 테스트가 된다.
 
 
 
