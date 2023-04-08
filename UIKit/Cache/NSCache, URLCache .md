@@ -122,6 +122,12 @@ final class ViewController: UIViewController {
     }
 }
 ```
+### NSCache에서 @escaping closure의 실행순서
+- MARK로 표시해놓은 대로, NetworkManager의 `loadURLCachedImage` 메서드가 실행되면 아래와 같은 순서로 진행된다.
+   - task를 생성
+   - task 내부 함수가 실행되는 것이 아니라 `URLCache.shared.getCachedResponse`가 실행되면서 `cachedResponse`를 검사하고 있다면 completion에 cachedResponse.data를 전달해서 보낸다.
+   - 만약 비어있다면 `task.resume()` 을 실행하여 다시 위로 올라가서 task 내부가 실행된다.
+   - data, response를 검사하는 과정에서 `URLCache.shared.storCachedResponse`가 실행되면서 받아온 데이터를 캐싱하고 그 data를 completion에 전달해서 보낸다.
 
 ```swift
 import Foundation
