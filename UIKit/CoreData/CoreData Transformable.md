@@ -62,7 +62,7 @@ func encode(with coder: NSCoder) {
 위에서 언급했듯이, transformable 타입은 CoreData에 저장되려면 transformer를 통해 변환되어 인코딩, 디코딩 과정을 거쳐 데이터를 저장 및 가져오기를 할 수 있게 된다. 이때 지정해주어야 하는 transformer는 아래와 같이 구현할 수 있다.
 
 
-```swift=
+```swift
 final class MovieAttributeTransformer: NSSecureUnarchiveFromDataTransformer {
     override class var allowedTopLevelClasses: [AnyClass] {
         [Movies.self]
@@ -82,11 +82,10 @@ final class MovieAttributeTransformer: NSSecureUnarchiveFromDataTransformer {
 CoreData에서 기본적으로 저장 가능한 타입 외에, 사용자 정의 타입을 저장하고자 할 때 디코딩, 인코딩이 가능하게 하기 위해 사용된다.
 
 - `allowedTopLevelClasses`: 
-이 프로퍼티에 저장된 타입은 디코딩, 인코딩이 가능하게(transformable) 됩니다.
+이 프로퍼티에 저장된 타입은 디코딩, 인코딩이 가능하게(transformable) 된다.
 `NSSecureUnarchiveFromDataTransformer`의 `allowedTopLevelClasses`에 지정된 타입은 `NSSecureCoding`을 채택한 타입만 허용되도록 해 보안을 강화할 수 있다.
 
 - `register()`:
-
 attribute에 적용된 transformer는 코어 데이터의 persistentContainer가 초기화되기 전에 앱에 먼저 등록이 되어야한다.
 따라서 AppDelegate에서 다음과 같이 등록했다. 
 (가장 먼저 등록해주지 않으면 오류가 발생하므로 메서드 상단에 구현해주어야 한다.)
