@@ -35,9 +35,8 @@ iOS에서 앱을 실행할 때, 위치 정보를 제공하는지 알림을 띄�
 // setUpLocation
 private func setUpLocation() {
         // delegate를 설정하는 부분은 main 스레드 있도록 권장 (공식문서) 왜냐하면, 주로 UI와 관련된 작업을 하기 때문
-        DispatchQueue.main.async { [weak self] in
-            self?.locationManager.delegate = self
-        }
+        
+        locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         
@@ -58,7 +57,8 @@ private func setUpLocation() {
 그 이유에 이 메서드는 비동기처리 메서드로 백그라운드 스레드에서 실행되어야 한다. main에서 실행되면 해당 작업이 main 스레드를 방해하여 앱이 느려지거나 동작하지 않을 수 있다.
 따라서 백그라운드 스레드에서 처리하도록 `DispatchQueue.global().async{ }`로 묶어주었다.
 
-또한 delegate를 설정해주는 부분은 아래 delegate 공식문서에서 알 수 있듯이 main 스레드에서 하도록 되어있어 참고하였다.
+또한 delegate를 설정해주는 부분은 아래 delegate 공식문서 보면 CLLocationManager가 초기화 되는 스레드에서 호출되어야 하고 viewController에서 생성된다면 DispatchQueue.main.async{} 에서 호출하지 않아도 된다.
+만약 다른 스레드에서 CLLocationManager가 초기화 된다면 같은 스레드에서 delegate = self를 호출해주어야 한다.
 
 ## CLLocationManagerDelegate
 > Protocol
