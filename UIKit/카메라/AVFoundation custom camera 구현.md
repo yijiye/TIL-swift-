@@ -226,3 +226,4 @@ extension RecordVideoViewController: AVCaptureFileOutputRecordingDelegate {
 - [AppleDeveloper - Capture setup](https://developer.apple.com/documentation/avfoundation/capture_setup)
 - [@heyksw velog](https://velog.io/@heyksw/iOS-AVFoundation-으로-custom-camera-구현)
 - [jintaewoo.tistory](https://jintaewoo.tistory.com/43)
+- [appcoda](https://www.appcoda.com/avfoundation-swift-guide/)
