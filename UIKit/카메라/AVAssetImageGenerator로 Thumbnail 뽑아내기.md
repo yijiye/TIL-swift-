@@ -102,4 +102,4 @@ func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileUR
 - [AppleDeveloper - copyCGImage(at:actualTime)](https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1387303-copycgimage)
 - [AppleDeveloper - Creating images from a video asset](https://developer.apple.com/documentation/avfoundation/media_reading_and_writing/creating_images_from_a_video_asset)
 - [felix-mr.tistory](https://felix-mr.tistory.com/4)
-
+- [hcn1519.github](https://hcn1519.github.io/articles/2018-05/avfoundationthumbnail)
