@@ -20,6 +20,7 @@
 - [Property](https://github.com/yijiye/TIL-swift-/blob/main/Swift/Concept/property.md)
 - [Protocol, delegate](https://github.com/yijiye/TIL-swift-/blob/main/Swift/Concept/protocol%2C%20delegate.md)
 - [Singleton](https://github.com/yijiye/TIL-swift-/blob/main/Swift/Concept/singleton.md)
+- [Singleton & Shared Instance (static)](https://github.com/yijiye/TIL-swift-/blob/main/Swift/Concept/singleton과%20shared%20instance.md)
 - [Type Casting](https://github.com/yijiye/TIL-swift-/blob/main/Swift/Concept/type%20casting.md)
 - [Floating-Point Number](https://github.com/yijiye/TIL-swift-/blob/main/Swift/Floating-Point%20Number.md)
 - [NumberFormatter](https://github.com/yijiye/TIL-swift-/blob/main/Swift/NumberFormatter.md)
