@@ -1,5 +1,6 @@
 # TIL List Up
-
+### CS
+- [1. 컴퓨터 구조 시작하기](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/1.%20컴퓨터%20구조%20시작하기.md)
 ### Memory
 - [ARC 강한순환참조](https://github.com/yijiye/TIL-swift-/blob/main/Memory/ARC%20강한순환참조.md)
 - [메모리구조, 클로저 ARC](https://github.com/yijiye/TIL-swift-/blob/main/Memory/메모리%20%26%20ARC%20part%202.md)
