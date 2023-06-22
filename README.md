@@ -68,7 +68,7 @@
 - [CoreData](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/CoreData/CoreData.md)
 - [CoreData-Transformable](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/CoreData/CoreData%20Transformable.md)
 - [CoreData-FetchRequest](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/CoreData/CoreData%20FetchRequest.md)
-- [CoreData-Lightweight migarion](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/CoreData/Lightweight%20Migration.md)
+- [CoreData-Lightweight migration](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/CoreData/Lightweight%20Migration.md)
 - [Delegate 화면간 데이터 전달](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/Delegate/delegate%20화면간%20데이터%20전달.md)
 - [Delegate 역할](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/UITableView/Delegate%20역할.md)
 - [Delegate 예제코드](https://github.com/yijiye/TIL-swift-/tree/main/UIKit/Delegate/delegate%20예제코드)
