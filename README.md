@@ -119,6 +119,7 @@
 - [UIImagePickerController](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/카메라/UIImagePickerController.md)
 - [CoreMotion, CMMotionManager](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/CoreMotion/CoreMotion%2C%20CMMotionManager.md)
 - [UML](https://github.com/yijiye/TIL-swift-/blob/main/UML.md)
+- [Q1. Frame과 Bounds의 차이](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/UIView/Frame%20vs%20Bounds.md)
 
 ### 아키텍쳐
 - [MVC](https://github.com/yijiye/TIL-swift-/blob/main/아키텍쳐/MVC.md)
