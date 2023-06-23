@@ -2,6 +2,7 @@
 ### CS
 - [1. 컴퓨터 구조 시작하기](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/1.%20컴퓨터%20구조%20시작하기.md)
 - [2. 데이터](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/2.%20데이터.md)
+- [3. 명령어](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/3.%20명령어.md)
 
 ### Memory
 - [ARC 강한순환참조](https://github.com/yijiye/TIL-swift-/blob/main/Memory/ARC%20강한순환참조.md)
