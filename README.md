@@ -3,6 +3,7 @@
 - [1. 컴퓨터 구조 시작하기](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/1.%20컴퓨터%20구조%20시작하기.md)
 - [2. 데이터](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/2.%20데이터.md)
 - [3. 명령어](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/3.%20명령어.md)
+- [4. CPU의 작동원리](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/4.%20CPU의%20작동%20원리.md)
 
 ### Memory
 - [ARC 강한순환참조](https://github.com/yijiye/TIL-swift-/blob/main/Memory/ARC%20강한순환참조.md)
@@ -84,6 +85,7 @@
 - [Notification Center](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/Notification%20Center/NotificationCenter.md)
 - [UICalendarView](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/UICalendarView/UICalendarView.md)
 - [UICollectionViewCompositionalLayout](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/UICollectionView/UICollectionViewCompositionalLayout.md)
+- [NSCollectionLayoutBoundarySupplementaryItem, CompositionalLayout Header 추가](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/UICollectionView/NSCollectionLayoutBoundarySupplementaryItem_Header%20추가.md)
 - [UICollectionViewDiffableDataSource](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/UICollectionView/UICollectionViewDiffableDataSource.md)
 - [UIResponder](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/UIResponder/UIResponder.md)
 - [UIRefreshControl](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/UIScrollView/UIRefreshControl.md)
