@@ -4,6 +4,7 @@
 - [2. 데이터](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/2.%20데이터.md)
 - [3. 명령어](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/3.%20명령어.md)
 - [4. CPU의 작동원리](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/4.%20CPU의%20작동%20원리.md)
+- [5. CPU 성능 향상 기법](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/5.%20CPU%20성능%20향상%20기법.md)
 
 ### Memory
 - [ARC 강한순환참조](https://github.com/yijiye/TIL-swift-/blob/main/Memory/ARC%20강한순환참조.md)
@@ -50,6 +51,7 @@
 - [Subject](https://github.com/yijiye/TIL-swift-/blob/main/Swift/Combine/Combine%20Subject.md)
 - [Subscribe](https://github.com/yijiye/TIL-swift-/blob/main/Swift/Combine/Combine%20Subscribe.md)
 - [Subscriber](https://github.com/yijiye/TIL-swift-/blob/main/Swift/Combine/Combine%20Subscriber.md)
+- [AnyCancellable](https://github.com/yijiye/TIL-swift-/blob/main/Swift/Combine/Combine%20Anycancellable.md)
 
 #### UnitTest
 - [Network에 의존하지 않는 테스트](https://github.com/yijiye/TIL-swift-/blob/main/Swift/UnitTest/Mock%20Test-Network.md)
