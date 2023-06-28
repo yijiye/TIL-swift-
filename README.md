@@ -5,6 +5,7 @@
 - [3. 명령어](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/3.%20명령어.md)
 - [4. CPU의 작동원리](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/4.%20CPU의%20작동%20원리.md)
 - [5. CPU 성능 향상 기법](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/5.%20CPU%20성능%20향상%20기법.md)
+- [6. 메모리와 캐시메모리](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/6.%20메모리와%20캐시메모리.md)
 
 ### Memory
 - [ARC 강한순환참조](https://github.com/yijiye/TIL-swift-/blob/main/Memory/ARC%20강한순환참조.md)
