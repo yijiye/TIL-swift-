@@ -9,6 +9,10 @@
 - [7. 보조기억장치](https://github.com/yijiye/TIL-swift-/blob/main/CS/혼공컴운/7.%20보조기억장치.md)
 - [8. 입출력장치](https://github.com/yijiye/TIL-swift-/blob/main/CS%3AOS/혼공컴운CS/8.%20입출력장치.md)
 
+### OS 
+- [9. 운영체제 시작하기](https://github.com/yijiye/TIL-swift-/blob/main/CS%3AOS/혼공컴운OS/9.%20운영체제%20시작하기.md)
+
+
 ### Memory
 - [ARC 강한순환참조](https://github.com/yijiye/TIL-swift-/blob/main/Memory/ARC%20강한순환참조.md)
 - [메모리구조, 클로저 ARC](https://github.com/yijiye/TIL-swift-/blob/main/Memory/메모리%20%26%20ARC%20part%202.md)
