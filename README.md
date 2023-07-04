@@ -11,6 +11,7 @@
 
 ### OS 
 - [9. 운영체제 시작하기](https://github.com/yijiye/TIL-swift-/blob/main/CS%3AOS/혼공컴운OS/9.%20운영체제%20시작하기.md)
+- [10. 프로세스와 스레드](https://github.com/yijiye/TIL-swift-/blob/main/CS%3AOS/혼공컴운OS/10.%20프로세스와%20스레드.md)
 
 
 ### Memory
