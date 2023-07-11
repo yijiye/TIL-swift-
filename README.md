@@ -136,6 +136,9 @@
 - [UML](https://github.com/yijiye/TIL-swift-/blob/main/UML.md)
 - [Q1. Frame과 Bounds의 차이](https://github.com/yijiye/TIL-swift-/blob/main/UIKit/UIView/Frame%20vs%20Bounds.md)
 
+### 면접스터디
+- [Week 1](https://github.com/yijiye/TIL-swift-/blob/main/면접스터디/Week%201.md)
+
 ### SwiftUI
 - [SwiftUI 기본](https://github.com/yijiye/TIL-swift-/blob/main/SwiftUI/SwiftUI.md)
 - [Property Wrapper](https://github.com/yijiye/TIL-swift-/blob/main/SwiftUI/Property%20Wrapper.md)
