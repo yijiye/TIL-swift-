@@ -13,6 +13,7 @@
 - [9. 운영체제 시작하기](https://github.com/yijiye/TIL-swift-/blob/main/CS%3AOS/혼공컴운OS/9.%20운영체제%20시작하기.md)
 - [10. 프로세스와 스레드](https://github.com/yijiye/TIL-swift-/blob/main/CS%3AOS/혼공컴운OS/10.%20프로세스와%20스레드.md)
 - [11. CPU 스케쥴링](https://github.com/yijiye/TIL-swift-/blob/main/CS%3AOS/혼공컴운OS/11.%20CPU%20스케쥴링.md)
+- [12. 프로세스 동기화](https://github.com/yijiye/TIL-swift-/blob/main/CS%3AOS/혼공컴운OS/12.%20프로세스%20동기화.md)
 
 
 ### Memory
