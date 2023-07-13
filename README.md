@@ -15,6 +15,7 @@
 - [11. CPU 스케쥴링](https://github.com/yijiye/TIL-swift-/blob/main/CS%3AOS/혼공컴운OS/11.%20CPU%20스케쥴링.md)
 - [12. 프로세스 동기화](https://github.com/yijiye/TIL-swift-/blob/main/CS%3AOS/혼공컴운OS/12.%20프로세스%20동기화.md)
 - [13. 교착상태](https://github.com/yijiye/TIL-swift-/blob/main/CS%3AOS/혼공컴운OS/13.%20교착상태.md)
+- [14. 가상메모리-페이징](https://github.com/yijiye/TIL-swift-/blob/main/CS%3AOS/혼공컴운OS/14.%20가상%20메모리%20관리%20-%20페이징.md)
 
 
 ### Memory
