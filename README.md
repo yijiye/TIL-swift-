@@ -141,6 +141,7 @@
 
 ### 면접스터디
 - [Week 1](https://github.com/yijiye/TIL-swift-/blob/main/면접스터디/Week%201.md)
+- [Week 2](https://github.com/yijiye/TIL-swift-/blob/main/면접스터디/Week%202.md)
 
 ### SwiftUI
 - [SwiftUI 기본](https://github.com/yijiye/TIL-swift-/blob/main/SwiftUI/SwiftUI.md)
